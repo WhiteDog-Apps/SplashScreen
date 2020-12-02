@@ -5,6 +5,24 @@ It allows you to indicate the minimum duration of the screen and makes it easy t
 
 It also prevents the timer from being affected by screen rotation (which causes the Activity to restart).
 
+## Setup
+#### 1. Add the JitPack repository to your build file if you didn't add before.
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+#### 2. Add the dependency
+```gradle
+dependencies {
+    implementation 'com.github.WhiteDog-Apps:SplashScreen:1.0.0'
+}
+```
+
 ## Usage
 #### 1.  Make your activity inherit from SplashScreenActivity
 ```kotlin
