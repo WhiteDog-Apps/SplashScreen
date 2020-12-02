@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Example_SplashScreen</string>
+    <string name="second_activty">Second Activty</string>
+</resources>
