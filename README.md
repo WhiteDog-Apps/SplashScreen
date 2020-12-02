@@ -27,55 +27,55 @@ dependencies {
 #### 1.  Make your activity inherit from SplashScreenActivity
 ```kotlin
 class MainActivity: SplashScreenActivity() {
-	...
+    ...
 }
 ```
 
 #### 2.  Implements members
 ```kotlin
-	override fun doInBackgroundSplashTask() {
-		// Do task
-	}
+    override fun doInBackgroundSplashTask() {
+        // Do task
+    }
 
-	override fun onSplashTaskFinished() {
-		// Start next activity
-	}
+    override fun onSplashTaskFinished() {
+        // Start next activity
+    }
 ```
 
 #### 3.  Call startSplashTask(minDuration) in your onCreate()
 ```kotlin
-	override fun onCreate(savedInstanceState: Bundle?) {
-		super.onCreate(savedInstanceState)
-		setContentView(R.layout.activity_main)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-		startSplashTask(2500)
-	}
+        startSplashTask(2500)
+    }
 ```
 
 ## Example
 ```kotlin
-	// 1. Make your activity inherit from SplashScreenActivity
+    // 1. Make your activity inherit from SplashScreenActivity
 class MainActivity: SplashScreenActivity() {
 
-	override fun onCreate(savedInstanceState: Bundle?) {
-		super.onCreate(savedInstanceState)
-		setContentView(R.layout.activity_main)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-		// 3. Call startSplashTask(minDuration) in your onCreate()
-		startSplashTask(2500)
-	}
+        // 3. Call startSplashTask(minDuration) in your onCreate()
+        startSplashTask(2500)
+    }
 
-	// 2. Implements members
-	override fun doInBackgroundSplashTask() {
-		// Do task
-		Thread.sleep(3500)
-	}
+    // 2. Implements members
+    override fun doInBackgroundSplashTask() {
+        // Do task
+        Thread.sleep(3500)
+    }
 
-	override fun onSplashTaskFinished() {
-		// Start next activity
-		startActivity(Intent(this, SecondActivity::class.java))
+    override fun onSplashTaskFinished() {
+        // Start next activity
+        startActivity(Intent(this, SecondActivity::class.java))
 
-		finish()
-	}
+        finish()
+    }
 }
 ```
