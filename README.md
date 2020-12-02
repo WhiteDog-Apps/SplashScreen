@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/WhiteDog-Apps/SplashScreen.svg)](https://jitpack.io/#WhiteDog-Apps/SplashScreen)
+
 # SplashScreen
 Android library that implements the logic of a splash screen.
 
