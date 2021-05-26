@@ -21,7 +21,7 @@ allprojects {
 #### 2. Add the dependency
 ```gradle
 dependencies {
-    implementation 'com.github.WhiteDog-Apps:SplashScreen:1.0.0'
+    implementation 'com.github.WhiteDog-Apps:SplashScreen:1.0.1'
 }
 ```
 
