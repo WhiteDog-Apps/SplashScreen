@@ -81,8 +81,6 @@ abstract class SplashScreenActivity : AppCompatActivity() {
                     onSplashTaskFinished()
                 }
             }
-
-            finish()
         }.start()
     }
 
